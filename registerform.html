@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d2c9c9;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 100px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        textarea, select{
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 550px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 1000px) {
+            form {
+                margin: 10px;
+            }
+            input[type="submit"] {
+                margin-left: 450px;
+            }
+        }
+        @media (max-width: 800px) {
+            form {
+                padding: 50px;
+            }
+            input[type="text"],
+            input[type="date"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="number"],
+            textarea, select{
+                width: 100%;
+            }
+            input[type="submit"] {
+                margin-left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <form action="" method="">
+
+      <!-- Personal Information -->
+      <h2>Personal Information</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" autocomplete="off" required><br>
+
+      <label for="date">Date of Birth:</label>
+      <input type="date" id="date" name="date" required><br>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" required>
+      <label for="female">Female</label><br>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea><br>
+
+      <!-- Contact Information -->
+      <h2>Contact Information</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" maxlength="10" required><br>
+
+      
+      <h2>Course Details</h2>
+      <label for="course">Courses:</label>
+      <select id="course" name="course">
+        <option value="B.Tech.CSE">B.Tech. CSE</option>
+        <option value="B.Tech.IT">B.Tech. IT</option>
+        <option value="B.Tech.EEE">B.Tech. EEE</option>
+        <option value="B.Tech.Bio.Medical">B.Tech. Bio.Medical</option>
+        <option value="B.Tech.ECE">B.Tech. ECE</option>
+        <option value="B.Tech.Mechanical Engineering">B.Tech. Mechanical Engineering</option>
+        <option value="B.Tech.Civil Engineering">B.Tech. Civil Engineering</option>
+        <option value="B.Tech.Automobile Engineering">B.Tech.Automobile Engineering</option>
+        <option value="B.Tech.CSE">M.Tech. CSE</option>
+        <option value="B.Tech.ECE">M.Tech. ECE</option>
+        <option value="M.Tech.Automobile Engineering">M.Tech.Automobile Engineering</option>
+      </select>
+
+
+      <!-- <h2>Additional Information</h2>
+      <label for="interests">Interests/Hobbies:</label>
+      <textarea id="interests" name="interests" rows="4"></textarea><br> -->
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" onclick="alert('Register Sucessfully!!!');">
+    </form>
+</body>
+</html>

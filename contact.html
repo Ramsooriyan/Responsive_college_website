@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering College Website</title>
+  <link rel="icon" href="/img/logo3.jpg">
+  
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/contact.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>Engineering College Website</h1>
+  </header>
+  <nav class="nav">
+    <div class="nav-link" id="navLinks">
+      <i class="fa faa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <section class="contactImg">
+    <h1 class="title">Contact Us</h1>
+  </section>
+
+  <section class="location">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1EKXgHGm0ucpSGkYqX0F9-xNpKNE&hl=en&ehbc=2E312F" width="640" height="400"></iframe>
+  </section>
+
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <h3 class="contactHead">Engineering College Website</h3>
+        <div>
+          <i class="fa fa-home"></i>
+          <span>
+              <h5>M.G. Road, R.K. Area</h5>
+              <p>Pondicherry</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <span>
+              <h5>+91 9376835746</h5>
+              <p>Monday to Saturday, 9AM to 5PM</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-envelope-o"></i>
+          <span>
+              <h5>info@123.com</h5>
+              <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form action="" method="">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Name*">
+      
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="E-mail*">
+      
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Message*" style="height:100px"></textarea>
+      
+          <input id="submit" type="submit" value="Submit Now" onclick="alert('Contact Details Updated!!!');">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="arrow up"></i></button>
+    <div class="copyrights">
+      Copyright &copy; 2023 Engineering College Website All rights reserved 
+    </div>
+  </footer>
+
+  <script>
+    let navLink = document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.left = "0";
+    }
+    function hideMenu(){
+      navLinks.style.left="-200px";
+    }
+
+    // Get the button
+    let mybutton = document.getElementById("topBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>

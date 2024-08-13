@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering College Website</title>
+  <link rel="icon" href="/img/logo3.jpg">
+  
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/about.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>Engineering College Website</h1>
+  </header>
+  <nav class="nav">
+    <div class="nav-link" id="navLinks">
+      <i class="fa faa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <section class="about">
+    <h3>About Us</h3>
+    <p>Welcome to [Your Engineering College Name], a premier institution at the forefront of engineering education and innovation. Established with a vision to cultivate a new generation of highly skilled and socially responsible engineers, we take pride in our commitment to excellence, cutting-edge research, and the holistic development of our students.</p>
+
+    <p>At [Your Engineering College Name], we believe in pushing the boundaries of knowledge and nurturing a culture of curiosity. Our distinguished faculty, comprised of accomplished scholars and industry experts, bring a wealth of experience to the classroom, providing students with a unique blend of theoretical insight and practical application. Our emphasis on hands-on learning ensures that our graduates are not only well-versed in engineering principles but also equipped with the problem-solving skills necessary to thrive in a dynamic and competitive professional landscape</p>
+
+    <p>Our state-of-the-art facilities provide an immersive learning environment, fostering innovation and collaboration. From well-equipped laboratories to modern lecture halls, every aspect of our campus is designed to inspire and support the academic journey of our students. We encourage interdisciplinary exploration, allowing students to engage in projects that span traditional engineering disciplines, preparing them for the interdisciplinary challenges of the real world.</p>
+
+    <p>Beyond academics, [Your Engineering College Name] is a vibrant community where diversity is celebrated, and students are encouraged to participate in extracurricular activities, clubs, and events. These experiences contribute to the overall development of our students, shaping them into well-rounded individuals ready to make a positive impact on society.</p>
+
+    <p>Our [Your Engineering College Name], a distinguished institution that stands as a beacon of excellence in engineering education, offering both undergraduate (UG) and postgraduate (PG) programs. At the heart of our mission is a commitment to fostering a dynamic learning environment that caters to the diverse needs of aspiring engineers at different stages of their academic journey.</p>
+
+    <p>Our undergraduate programs provide a solid foundation, equipping students with a comprehensive understanding of engineering principles and practices. Through rigorous coursework, hands-on projects, and collaborative learning experiences, students are prepared to meet the challenges of the ever-evolving engineering landscape. Our dedicated faculty, comprised of seasoned educators and industry leaders, guide students on this transformative journey, ensuring a well-rounded education that extends beyond textbooks.</p>
+
+    <p>For those seeking advanced knowledge and specialization, our postgraduate programs offer a pathway to delve deeper into specific engineering disciplines. Whether it's pursuing cutting-edge research, engaging in industry partnerships, or developing leadership skills, our PG students are empowered to explore the frontiers of their chosen fields and contribute to advancements in technology and innovation.</p>
+
+    <p>At [Your Engineering College Name], we take pride in providing an inclusive and supportive community where both UG and PG students collaborate, learn from each other, and contribute to a rich tapestry of academic excellence. Join us at [Your Engineering College Name], where the pursuit of knowledge knows no bounds, and where both undergraduate and postgraduate students are empowered to shape a future of endless possibilities.</p>
+  </section>
+
+  
+
+
+  <footer class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="arrow up"></i></button>
+    <div class="copyrights">
+      Copyright &copy; 2023 Engineering College Website All rights reserved 
+    </div>
+  </footer>
+
+  <script>
+    let navLink = document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.left = "0";
+    }
+    function hideMenu(){
+      navLinks.style.left="-200px";
+    }
+
+    // Get the button
+    let mybutton = document.getElementById("topBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering College Website</title>
+  <link rel="icon" href="/img/logo3.jpg">
+  
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/admission.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    .addImg{
+      background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("/img/admission.png");
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>Engineering College Website</h1>
+  </header>
+  <nav class="nav">
+    <div class="nav-link" id="navLinks">
+      <i class="fa faa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <section class="addImg">
+    <div class="addLeft">
+      <h2 class="img-title">Premium education at
+        an affordable fee !</h2>
+      <h3 class="img-title">Embark on your career journey
+        with a head start</h3>
+    </div>
+
+    <!-- Register -->
+    <div class="modal1">    
+      <form class="modal-content1 animate1" action="" method="">
+
+        <div class="container1">
+          <h1>Login</h1>
+          <p>Please fill in this form to Login an account.</p>
+          <hr>
+          <label for="email"><b>E-mail:</b></label>
+          <input type="email" placeholder="Enter email" name="email" autocomplete="off" required>
+
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" maxlength="8" required>
+            
+          <button class="submitBtn" type="submit">Login</button>
+
+        </div>
+      </form>
+    </div>
+
+    <label class="modalPara">If you want Register?</label>
+    <!-- Sign up -->
+    <button class="submit" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+
+    <div id="id01" class="modal">    
+      <form class="modal-content animate" action="" method="">
+
+        <div class="close-box">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close form">&times;</span>
+        </div>
+
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Name" name="username" autocomplete="off" required>
+
+          <label for="email"><b>E-mail</b></label>
+          <input type="email" placeholder="Enter E-mail" name="email" autocomplete="off" required>
+
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" maxlength="8" required>
+            
+          <button class="submitBtn"><a href="/registerform.html">Sign Up</a></button>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="addCourse">
+    <h1 class="courseHead">Courses Offered</h1>
+    <div class="center">
+      <div class="row">
+        <div class="col-accordion">
+          <button class="accordion">B.Tech CSE</button>
+          <div class="panel">
+            <p>A Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE) is an undergraduate academic degree program that focuses on the study of computer systems, software development, and related technologies. It typically spans a duration of four years and is designed to provide students with a strong foundation in computer science principles, programming languages, algorithms, data structures, and various areas of computer engineering.</p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">B.Tech. IT</button>
+          <div class="panel">
+            <p>A Bachelor of Technology (B.Tech.) in Information Technology (IT) is an undergraduate engineering program that focuses on the study of computer systems, information management, and software development. The B.Tech. IT course typically spans four years and is designed to provide students with a strong foundation in IT principles and practices.</p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">B.Tech. EEE</button>
+          <div class="panel">
+            <p>A Bachelor of Technology (B.Tech.) in Electrical and Electronics Engineering (EEE) is an undergraduate engineering program that focuses on the study of electrical systems, electronics, and related technologies. This course typically spans four years and is designed to provide students with a strong foundation in electrical engineering principles and practices.</p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">B.Tech. Bio-Medical</button>
+          <div class="panel">
+            <p>A Bachelor of Technology (B.Tech.) in Biomedical Engineering is an undergraduate engineering program that focuses on the application of engineering principles to the field of biology and medicine. This program typically spans four years and is designed to equip students with the knowledge and skills required to work at the intersection of engineering and healthcare. Here are some key aspects of the B.Tech.</p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">B.Tech. ECE</button>
+          <div class="panel">
+            <p>
+              A Bachelor of Technology (B.Tech.) in Electronics and Communication Engineering (ECE) is an undergraduate engineering program that focuses on the study of electronic systems, communication technologies, and related fields. The B.Tech. ECE course typically spans four years and is designed to provide students with a strong foundation in electronics, communication, and information technology. Here are some key aspects of the B.Tech. </p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">B.Tech. Mechanical Engineering </button>
+          <div class="panel">
+            <p>A Bachelor of Technology (B.Tech.) in Mechanical Engineering is an undergraduate engineering program that focuses on the study of mechanical systems, machinery, and related areas. The B.Tech. Mechanical Engineering course typically spans four years and is designed to provide students with a strong foundation in core mechanical engineering principles. Here are some key aspects of the B.Tech.</p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">B.Tech. Civil Engineering</button>
+          <div class="panel">
+            <p>A Bachelor of Technology (B.Tech.) in Civil Engineering is an undergraduate engineering program that focuses on the design, construction, and maintenance of infrastructure such as buildings, bridges, roads, dams, and other structures. The B.Tech. Civil Engineering course typically spans four years and is designed to provide students with a strong foundation in core civil engineering principles. Here are some key aspects of the B.Tech.</p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">B.Tech. Automobile Engineering</button>
+          <div class="panel">
+            <p>
+              A Bachelor of Technology (B.Tech.) in Automobile Engineering is an undergraduate engineering program that focuses on the design, manufacturing, and maintenance of automobiles. The B.Tech. Automobile Engineering course typically spans four years and is designed to provide students with a strong foundation in core engineering principles with a specific focus on automotive technology. Here are some key aspects of the B.Tech. </p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">M.Tech. CSE</button>
+          <div class="panel">
+            <p>A Master of Technology (M.Tech.) in Computer Science and Engineering (CSE) is a postgraduate program that provides advanced knowledge and skills in the field of computer science. This program typically spans two years and is designed for individuals who have completed a Bachelor's degree in Computer Science or a related field. Here are some key aspects of the M.Tech. </p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">M.Tech. ECE</button>
+          <div class="panel">
+            <p>
+              A Master of Technology (M.Tech.) in Electronics and Communication Engineering (ECE) is a postgraduate program that provides advanced knowledge and skills in the field of electronics, communication systems, and related technologies. This program typically spans two years and is designed for individuals who have completed a Bachelor's degree in Electronics and Communication Engineering or a related field. Here are some key aspects of the M.Tech.</p>
+          </div>
+        </div>
+        <div class="col-accordion">
+          <button class="accordion">M.Tech. Automobile Engineering</button>
+          <div class="panel">
+            <p>
+              A Master of Technology (M.Tech.) in Information Technology (IT) is a postgraduate program that provides advanced knowledge and skills in the field of information technology. The program typically spans two years and is designed for individuals who have completed a Bachelor's degree in IT, computer science, or a related field. Here are some key aspects of the M.Tech.</p>
+          </div>
+        </div>
+    
+      </div>  
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="arrow up"></i></button>
+    <div class="copyrights">
+      Copyright &copy; 2023 Engineering College Website All rights reserved 
+    </div>
+  </footer>
+
+  <script>
+    let navLink = document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.left = "0";
+    }
+    function hideMenu(){
+      navLinks.style.left="-200px";
+    }
+
+    // Get the modal
+    let modal = document.getElementById('id01');  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    //Addmission Course
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+
+    // Get the button
+    let mybutton = document.getElementById("topBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering College Website</title>
+  <link rel="icon" href="/img/logo3.jpg">
+  
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/home.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    .one{
+      background-image: url("img/banner.png");
+      background-position: bottom;
+    }
+    .two{
+      background-image: url("img/background.jpg");
+      background-position: center;
+    }
+    .three{
+      background-image: url("img/admission.png");
+      background-position: top;
+    }
+    .infra-one{
+      background-image:linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("img/classroom.png");
+    }
+    .infra-two{
+      background-image:linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("img/laboratory.png");
+    }
+    .infra-three{
+      background-image:linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("img/library.png");
+    }
+    .infra-four{
+      background-image:linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("img/basketball.png");
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>Engineering College Website</h1>
+  </header>
+  <nav class="nav">
+    <div class="nav-link" id="navLinks">
+      <i class="fa faa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+  
+  <section class="image"> 
+    <div class="mySlides fade one"></div>
+    <div class="mySlides fade two"></div>
+    <div class="mySlides fade three"></div> 
+  </section>
+  <br>
+  <div>
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <section class="about">
+    <h3>About Us</h3>
+    <p>Welcome to Engineering College Website, a premier institution at the forefront of engineering education and innovation. Established with a vision to cultivate a new generation of highly skilled and socially responsible engineers, we take pride in our commitment to excellence, cutting-edge research, and the holistic development of our students.</p>
+
+    <p>At Engineering College Website, we believe in pushing the boundaries of knowledge and nurturing a culture of curiosity. Our distinguished faculty, comprised of accomplished scholars and industry experts, bring a wealth of experience to the classroom, providing students with a unique blend of theoretical insight and practical application. Our emphasis on hands-on learning ensures that our graduates are not only well-versed in engineering principles but also equipped with the problem-solving skills necessary to thrive in a dynamic and competitive professional landscape</p>
+  </section>
+
+  <section class="faculty">
+    <h3>Faculties</h3>
+    <p>Welcome to Engineering College Website, where our distinguished faculties form the cornerstone of academic excellence. Comprising seasoned educators and industry leaders, our faculty members are dedicated to nurturing the intellectual growth and professional development of our students.</p>
+    <h4>Undergraduate Faculties:</h4>
+    <ul>
+      <li>Experienced educators and industry leaders</li>
+      <li>Guides students through a comprehensive curriculum</li>
+      <li>Encourages curiosity and critical thinking</li>
+      <li>Provides mentorship and engages in hands-on projects</li>
+      <li>Prepares students for challenges in the engineering field</li>
+    </ul>
+    <h4> Postgraduate Faculties</h4>
+    <ul>
+      <li>Expertise in various engineering disciplines</li>
+      <li>Guides students in specialized studies</li>
+      <li>Mentors and collaborates in advanced research</li>
+      <li>Ensures a balance of academic rigor and practical relevance</li>
+      <li>Stays at the forefront of industry trends</li>
+    </ul>
+    <h4>Undergraduate Faculties:</h4>
+    <ul>
+      <li>Passionate about creating an inclusive learning environment</li>
+      <li>Dedicated to intellectual growth and professional development</li>
+      <li>Enriches academic experiences with industry insights</li>
+      <li>Prepares students for success in careers and contributions to the engineering community</li>
+    </ul>
+    <p>At Engineering College Website, we take pride in our faculty's dedication to creating an inclusive and stimulating learning environment. Their passion for teaching, coupled with their industry insights, enriches the academic experience, preparing students to excel in both their careers and contributions to the engineering community. Join us, where the expertise and commitment of our faculties propel students towards a future defined by innovation and leadership in the engineering realm.</p>
+  </section>
+
+  <section class="infrastructure">
+    <h3>Infrastructure</h3>
+
+    <div class="infrastructure-item">
+      <div class="infra-img infra-one"></div>
+      <h4>Modern Classrooms</h4>
+      <p>Equipped with state-of-the-art technology to enhance the learning experience.</p>
+    </div>
+
+    <div class="infrastructure-item">
+      <div class="infra-img infra-two"></div>
+      <h4>Advanced Laboratories</h4>
+      <p>Specialized labs for practical sessions in mechanical, electrical, and computer science.</p>
+    </div>
+
+    <div class="infrastructure-item">
+      <div class="infra-img infra-three"></div>
+      <h4>Library and Resources</h4>
+      <p>A vast collection of books, journals, and online resources for research and study.</p>
+    </div>
+
+    <div class="infrastructure-item">
+      <div class="infra-img infra-four"></div>
+      <h4>Sports Facilities</h4>
+      <p>Playgrounds and sports facilities to encourage a healthy and active lifestyle.</p>
+    </div>
+</section>
+
+  <footer class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="arrow up"></i></button>
+    <div class="copyrights">
+      Copyright &copy; 2023 Engineering College Website All rights reserved 
+    </div>
+  </footer>
+
+  <script>
+    let navLink = document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.left = "0";
+    }
+    function hideMenu(){
+      navLinks.style.left="-200px";
+    }
+
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let x;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (x = 0; x < slides.length; x++) {
+        slides[x].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (x = 0; x < dots.length; x++) {
+        dots[x].className = dots[x].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+
+    // Get the button
+    let mybutton = document.getElementById("topBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering College Website</title>
+  <link rel="icon" href="/img/logo3.jpg">
+  
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/department.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>Engineering College Website</h1>
+  </header>
+  <nav class="nav">
+    <div class="nav-link" id="navLinks">
+      <i class="fa faa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="#">Department</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+  
+  <section>
+    <h1 class="deptText">Department</h1>
+    <div class="department">
+  
+      <div class="tab">
+        <label>Courses:</label>
+        <button class="tablinks" onclick="openDept(event, 'cse')" id="defaultOpen">B.Tech. CSE</button>
+        <button class="tablinks" onclick="openDept(event, 'it')">B.Tech. IT</button>
+        <button class="tablinks" onclick="openDept(event, 'eee')">B.Tech. EEE </button>
+        <button class="tablinks" onclick="openDept(event, 'bio')">B.Tech. Bio-Medical</button>
+        <button class="tablinks" onclick="openDept(event, 'ece')">B.Tech. ECE</button>
+        <button class="tablinks" onclick="openDept(event, 'mech')">B.Tech. Mechancial Engineering</button>
+        <button class="tablinks" onclick="openDept(event, 'civil')">B.Tech. Civil Engineering</button>
+        <button class="tablinks" onclick="openDept(event, 'auto')">B.Tech. Automobile Engineering</button>
+        <button class="tablinks" onclick="openDept(event, 'Mcse')">M.Tech. CSE</button>
+        <button class="tablinks" onclick="openDept(event, 'Mece')">M.Tech. ECE</button>
+        <button class="tablinks" onclick="openDept(event, 'Mauto')">M.Tech. Automobile Engineering</button>
+      </div>
+    
+      <div id="cse" class="tabcontent">
+        <h2>B.Tech. Computer Science and Engineering</h2>
+        <p>A Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE) is an undergraduate academic degree program that focuses on the study of computer systems, software development, and related technologies. It typically spans a duration of four years and is designed to provide students with a strong foundation in computer science principles, programming languages, algorithms, data structures, and various areas of computer engineering.</p>
+        <h3>Curriculum Overview:</h3>
+        <h4>First Year:</h4>
+        <ul>
+            <li>Common foundational courses in mathematics, physics, and basic engineering principles.</li>
+        </ul>
+        <h4>Second Year:</h4>
+        <ul>
+          <li>Core computer science courses, including data structures, algorithms, computer organization, and programming languages.</li>
+          <li>Introduction to databases, computer networks, and software engineering.</li>
+        </ul>
+        <h4>Third Year:</h4>
+        <ul>
+          <li>In-depth study of advanced topics such as operating systems, computer graphics, and theory of computation.</li>
+          <li>Elective courses in specialized areas, such as artificial intelligence, machine learning, cybersecurity, and web development.</li>
+        </ul>
+        <h4>Fourth Year:</h4>
+        <ul>
+          <li>Specialized electives and project work.</li>
+          <li>Internship or industrial training.</li>
+          <li>Final year project that often involves designing and implementing a significant software system.</li>
+        </ul>   
+      </div>
+    
+      <div id="it" class="tabcontent">
+        <h2>B.Tech. Information Technology</h2>
+        <p>A Bachelor of Technology (B.Tech.) in Information Technology (IT) is an undergraduate engineering program that focuses on the study of computer systems, information management, and software development. The B.Tech. IT course typically spans four years and is designed to provide students with a strong foundation in IT principles and practices.</p>
+        <h3>Curriculum Overview:</h3>
+        <h4>First Year:</h4>
+        <ul>
+          <li>Common foundational courses in mathematics, physics, and basic engineering principles.</li>
+        </ul>
+        <h4>Second Year:</h4>
+        <ul>
+          <li>Core computer science courses, including data structures, algorithms, computer organization, and programming languages.</li>
+          <li>Introduction to databases, computer networks, and software engineering.</li>
+        </ul>
+        <h4>Third Year:</h4>
+        <ul>
+          <li>In-depth study of advanced topics such as operating systems, computer graphics, and theory of computation.</li>
+          <li>Elective courses in specialized areas, such as artificial intelligence, machine learning, cybersecurity, and web development.</li>    
+          <li>In-depth study of advanced topics such as operating systems, computer graphics, and theory of computation.</li>
+          <li>Elective courses in specialized areas, such as artificial intelligence, machine learning, cybersecurity, and web development.</li> 
+        </ul>
+        <h4>Fourth Year:</h4>
+        <ul>
+          <li>Specialized electives and project work.</li>
+          <li>Internship or industrial training.</li>
+          <li>Final year project that often involves designing and implementing a significant software system.</li>
+        </ul>
+      </div>
+    
+      <div id="eee" class="tabcontent">
+        <h2>B.Tech. Electrical and Electronics Engineering</h2>
+        <p>A Bachelor of Technology (B.Tech.) in Electrical and Electronics Engineering (EEE) is an undergraduate engineering program that focuses on the study of electrical systems, electronics, and related technologies. This course typically spans four years and is designed to provide students with a strong foundation in electrical engineering principles and practices. </p>
+        <h3>Curriculum:</h3>
+        <ul>
+          <li>The curriculum of a B.Tech. EEE program usually includes a combination of core courses, elective courses, and practical sessions. Core courses cover fundamental topics such as circuit theory, electromagnetic fields, control systems, power systems, electronics, and communication systems.</li>
+        </ul>
+        <h3>Laboratory Work: </h3>
+        <ul>
+          <li> Practical experience is a crucial component of the B.Tech. EEE course. Students often engage in laboratory work to gain hands-on experience with electrical and electronic devices, circuits, and systems. This practical exposure helps in applying theoretical knowledge to real-world situations.</li>
+        </ul>
+        <h3>Projects:</h3>
+        <ul>
+          <li>Students may be required to undertake individual or group projects as part of their coursework. These projects provide an opportunity for students to apply their knowledge and skills to solve engineering problems and gain practical insights into the field.</li>
+        </ul>
+        <h3>Internship/Industrial Training: </h3>
+        <ul>
+          <li> Many B.Tech. programs include an internship or industrial training component, where students work with companies or organizations to gain real-world industry experience. </li>
+        </ul>
+      </div>
+    
+      <div id="bio" class="tabcontent">
+        <h2>B.Tech. Bio-Medical Engineering</h2>
+        <p>A Bachelor of Technology (B.Tech.) in Biomedical Engineering is an undergraduate engineering program that focuses on the application of engineering principles to the field of biology and medicine. This program typically spans four years and is designed to equip students with the knowledge and skills required to work at the intersection of engineering and healthcare. </p>
+        <h3>Curriculum: </h3>
+        <ul>
+          <li>The curriculum of a B.Tech. Biomedical Engineering program includes a mix of core engineering courses and specialized biomedical engineering courses. Core courses may cover subjects such as mathematics, physics, and general engineering principles. Specialized courses focus on biomedical instrumentation, medical imaging, biomaterials, biomechanics, and bioinformatics.</li>
+        </ul>
+        <h3>Biomedical Instrumentation: </h3>
+        <ul>
+          <li>This area covers the design and development of medical devices and instruments used in healthcare. Students learn about the principles behind devices such as ECG machines, blood pressure monitors, and other medical sensors.</li>
+        </ul>
+        <h3>Biomaterials:</h3>
+        <ul>
+          <li> Biomaterials are materials that interact with biological systems. In this part of the curriculum, students learn about the properties of materials used in medical applications, such as artificial organs, prosthetics, and medical implants.</li>
+        </ul>
+        <h3>Biomechanics:</h3>
+        <ul>
+          <li>Biomechanics involves the study of mechanical aspects of biological systems. Students in this course learn about the mechanical behavior of tissues, organs, and the human body, which is important for designing devices</li>
+        </ul>
+        <h3>Bioinformatics: </h3>
+        <ul>
+          <li>Bioinformatics involves the application of computational techniques to biological data.</li>
+        </ul>    
+      </div>
+    
+      <div id="ece" class="tabcontent">
+        <h2>B.Tech.  Electronics and Communication Engineering</h2>
+        <p>A Bachelor of Technology (B.Tech.) in Electronics and Communication Engineering (ECE) is an undergraduate engineering program that focuses on the study of electronic systems, communication technologies, and related fields. The B.Tech. ECE course typically spans four years and is designed to provide students with a strong foundation in electronics, communication, and information technology.</p>
+        <h3>Curriculum:</h3>
+        <ul>
+          <li>The curriculum of a B.Tech. ECE program includes a combination of core courses, elective courses, and practical sessions. Core courses cover fundamental topics such as analog and digital electronics, communication systems, signals and systems, microprocessors, and electromagnetic theory.</li>
+        </ul>
+        <h3>Digital Signal Processing: </h3>
+        <ul>
+          <li>Students in the ECE program often study digital signal processing (DSP), which involves the analysis, manipulation, and interpretation of signals. DSP is crucial in various applications, including telecommunications and audio processing.</li>
+        </ul>
+        <h3>Microprocessors and Microcontrollers:</h3>
+        <ul>
+          <li>Students learn about the architecture and programming of microprocessors and microcontrollers. This knowledge is essential for designing and implementing embedded systems.</li>
+        </ul>
+        <h3>Communication Systems: </h3>
+        <ul>
+          <li>This area of study covers the principles and techniques of transmitting information over different communication channels. Topics may include analog and digital communication, wireless communication, and networking.</li>
+        </ul>
+      </div>
+    
+      <div id="mech" class="tabcontent">
+        <h2>B.Tech. Mechanical Engineering</h2>
+        <p>A Bachelor of Technology (B.Tech.) in Mechanical Engineering is an undergraduate engineering program that focuses on the study of mechanical systems, machinery, and related areas. The B.Tech. Mechanical Engineering course typically spans four years and is designed to provide students with a strong foundation in core mechanical engineering principles.</p>
+        <h3>Curriculum:</h3>
+        <ul>
+          <li>The curriculum of a B.Tech. Mechanical Engineering program includes a combination of core courses, elective courses, and practical sessions. Core courses cover fundamental topics such as mechanics, thermodynamics, fluid mechanics, heat transfer, materials science, manufacturing processes, and machine design.</li>
+        </ul>
+        <h3>Mechanics and Dynamics:</h3>
+        <ul>
+          <li> Students learn the principles of mechanics and dynamics, including topics such as statics, dynamics, and kinematics. This knowledge is essential for understanding the behavior of structures and mechanical components.</li>
+        </ul>
+        <h3>Thermodynamics: </h3>
+        <ul>
+          <li>Thermodynamics is a crucial aspect of mechanical engineering, dealing with the study of energy and its transformations. Topics include laws of thermodynamics, heat transfer, and applications in engineering systems.</li>
+        </ul>
+        <h3>Materials Science and Engineering:    </h3>
+        <ul>
+          <li> The study of materials involves understanding the properties and behavior of different materials used in mechanical engineering applications. This includes metals, polymers, ceramics, and composite
+          </li>
+        </ul>
+      </div>
+    
+      <div id="civil" class="tabcontent">
+        <h2>B.Tech. Civil Engineering </h2>
+        <p>A Bachelor of Technology (B.Tech.) in Civil Engineering is an undergraduate engineering program that focuses on the design, construction, and maintenance of infrastructure such as buildings, bridges, roads, dams, and other structures. The B.Tech. Civil Engineering course typically spans four years and is designed to provide students with a strong foundation in core civil engineering principles. Here are some key aspects of the B.Tech.</p>
+        <h3>Curriculum:</h3>
+        <ul>
+          <li>The curriculum of a B.Tech. Civil Engineering program includes a combination of core courses, elective courses, and practical sessions. Core courses cover fundamental topics such as structural engineering, geotechnical engineering, transportation engineering, environmental engineering, and construction management</li>
+        </ul>
+        <h3>Structural Engineering: </h3>
+        <ul>
+          <li>This area focuses on the analysis and design of structures such as buildings and bridges. Students learn about structural mechanics, structural analysis, and the behavior of materials under different loading conditions.</li>
+        </ul>
+        <h3>Geotechnical Engineering: </h3>
+        <ul>
+          <li>Geotechnical engineering involves the study of soil and rock mechanics. Students learn about foundation design, slope stability, and soil-structure interaction.</li>
+        </ul>
+        <h3>Construction Management:</h3>
+        <ul>
+          <li>Construction management courses cover project planning, scheduling, and execution. Students learn about project management techniques, cost estimation, and risk management in the construction industry.</li>
+        </ul>
+      </div>
+    
+      <div id="auto" class="tabcontent">
+        <h2>B.Tech. Automobile Engineering</h2>
+        <p>A Bachelor of Technology (B.Tech.) in Automobile Engineering is an undergraduate engineering program that focuses on the design, manufacturing, and maintenance of automobiles. The B.Tech. Automobile Engineering course typically spans four years and is designed to provide students with a strong foundation in core engineering principles with a specific focus on automotive technology. </p>
+        <h3>Curriculum: </h3>
+        <ul>
+          <li>The curriculum of a B.Tech. Automobile Engineering program includes a combination of core courses, elective courses, and practical sessions. Core courses cover fundamental topics such as automotive design, automotive systems, internal combustion engines, vehicle dynamics, and automotive electronics.</li>
+        </ul>
+        <h3>Automotive Design: </h3>
+        <ul>
+          <li>This area focuses on the principles and techniques of designing automobiles. Students learn about aesthetics, ergonomics, safety considerations, and the integration of various systems into the overall vehicle design.</li>
+        </ul>
+        <h3>Internal Combustion Engines:</h3>
+        <ul>
+          <li>Students study the principles and design of internal combustion engines, which are the primary power source for most automobiles. This includes topics such as thermodynamics, combustion, and engine performance.</li>
+        </ul>
+        <h3>Vehicle Dynamics: </h3>
+        <ul>
+          <li>Vehicle dynamics involves the study of the motion and behavior of vehicles. Students learn about factors affecting vehicle stability, handling, and performance.</li>
+        </ul>
+      </div>
+    
+      <div id="Mcse" class="tabcontent">
+        <h2>M.Tech. Computer Science and Engineering </h2>
+        <p>A Master of Technology (M.Tech.) in Computer Science and Engineering (CSE) is a postgraduate program that provides advanced knowledge and skills in the field of computer science. This program typically spans two years and is designed for individuals who have completed a Bachelor's degree in Computer Science or a related field.</p>
+        <h3>Specializations:</h3>
+        <ul>
+          <li>M.Tech. CSE programs often offer specializations or focus areas within the broader field of computer science. Common specializations include Artificial Intelligence, Machine Learning, Data Science, Cybersecurity, Computer Networks, Distributed Systems, Software Engineering, and more.</li>
+        </ul>
+        <h3>Core Courses:</h3>
+        <ul>
+          <li>The program includes core courses that cover advanced topics in computer science. These may include advanced algorithms, data structures, computer architecture, operating systems, and database systems.</li>
+        </ul>
+        <h3>Elective Courses:</h3>
+        <ul>
+          <li>Students have the opportunity to choose elective courses based on their interests and career goals. Elective courses may align with specific specializations or cover emerging technologies in the field.</li>
+        </ul>
+        <h3>Internship/Industry Collaboration:</h3>
+        <ul>
+          <li>Some M.Tech. CSE programs offer opportunities for internships or collaboration with industry partners. This provides students with real-world experience and a chance to apply their skills in practical settings.</li>
+        </ul>
+      </div>
+    
+      <div id="Mece" class="tabcontent">
+        <h2>M.Tech. Electronics and Communication Engineering</h2>
+        <p>A Master of Technology (M.Tech.) in Electronics and Communication Engineering (ECE) is a postgraduate program that provides advanced knowledge and skills in the field of electronics, communication systems, and related technologies. This program typically spans two years and is designed for individuals who have completed a Bachelor's degree in Electronics and Communication Engineering or a related field.</p>
+        <h3>Specializations:</h3>
+        <ul>
+          <li>M.Tech. ECE programs often offer specializations or focus areas within the broader field of electronics and communication. Common specializations include VLSI Design, Embedded Systems, Signal Processing, Communication Systems, Microelectronics, and more.</li>
+        </ul>
+        <h3>Core Courses:</h3>
+        <ul>
+          <li> The program includes core courses that cover advanced topics in electronics and communication engineering. These may include advanced digital signal processing, advanced communication systems, VLSI design, advanced microelectronics, and other specialized courses.</li>
+        </ul>
+        <h3>Elective Courses:</h3>
+        <ul>
+          <li>Students have the opportunity to choose elective courses based on their interests and the chosen specialization. Elective courses may cover emerging technologies, advanced topics in the chosen specialization, or interdisciplinary subjects.</li>
+        </ul>
+        <h3>Internship/Industry Collaboration:</h3>
+        <ul>
+          <li>Some M.Tech. ECE programs offer opportunities for internships or collaboration with industry partners. This provides students with real-world experience and a chance to apply their skills in practical settings.</li>
+        </ul>
+      </div>
+    
+      <div id="Mauto" class="tabcontent">
+        <h2>M.Tech. Automobile Engineering</h2>
+        <p>A Master of Technology (M.Tech.) in Automobile Engineering is an postgraduate engineering program that focuses on the design, manufacturing, and maintenance of automobiles. The M.Tech. Automobile Engineering course typically spans four years and is designed to provide students with a strong foundation in core engineering principles with a specific focus on automotive technology.</p>
+        <h3>Core Courses:</h3>
+        <ul>
+          <li><b>Advanced Vehicle Dynamics:</b> In-depth study of the dynamics of vehicles, including handling, stability, and performance analysis.</li>
+          <li><b>Automotive Powertrain Systems:</b> Advanced study of internal combustion engines, transmissions, and hybrid powertrain systems.</li>
+          <li><b>Vehicle Design and Analysis:</b> Comprehensive exploration of the design principles and analysis techniques for various vehicle components and systems.</li>
+          <li><b>Automotive Electronics and Control Systems:</b> Focus on electronic control systems used in modern vehicles, including engine control units, safety systems, and advanced driver-assistance systems.</li>
+        </ul>
+        <h3>Specializations:</h3>
+        <ul>
+          <li>Programs may offer specializations in areas such as Electric and Hybrid Vehicles, Advanced Materials in Automotive Engineering, Automotive Safety, and Intelligent Transportation Systems.</li>
+        </ul>
+        <h3>Vehicle Manufacturing Processes:</h3>
+        <ul>
+          <li>Study of advanced manufacturing techniques and processes specific to the automotive industry.</li>
+        </ul>
+        <h3>Internship/Industry Collaboration:</h3>
+        <ul>
+          <li>Opportunities for internships or collaboration with automotive companies to gain practical experience and exposure to real-world challenges.</li>
+        </ul>
+      </div>
+    
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="arrow up"></i></button>
+    <div class="copyrights">
+      Copyright &copy; 2023 Engineering College Website All rights reserved 
+    </div>
+  </footer>
+
+  <script>
+    let navLink = document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.left = "0";
+    }
+    function hideMenu(){
+      navLinks.style.left="-200px";
+    }
+
+    // Get the button
+    let mybutton = document.getElementById("topBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function openDept(evt, deptName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(deptName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>

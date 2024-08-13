@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data</title>
+    <style>
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>user details</h1>
+    <ul>
+            <li>Name: </li>
+            <li>Date of Birth: </li>
+            <li>Gender: </li>
+            <li>E-mail: </li>
+            <li>Contact Number:</li>
+            <li>Address: </li>
+            <li>Courses: </li>
+        
+    </ul>
+    
+    <form action="/logout" method="POST">
+        <input type="submit" name="logout" value="logout" onclick="confirm('If you Want to Logout your account!!!');">
+    </form>
+
+    <form action="/update" method="POST">
+        <input type="submit" name="update" value="update">
+    </form>
+</body>
+</html>
